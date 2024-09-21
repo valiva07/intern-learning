@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/oleo-script');
+
+.reports-package-wrapper-section{
+    margin: 100px 0 0;
+    background-color: #fefcfc;
+    display: flex;
+    background-image: url("pricing_bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.reports-package-content-section{
+    width: 1256px;
+    margin: auto;
+    padding: 50px 0 0;
+    color: #101828;
+}
+.valuation-reports-section{
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    color: #101828;
+    width: 600px;
+}
+.main-heading{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
+.reports-package-card-title{
+    font-size: 32px;
+    font-family: Oleo Script;
+}
+.reports-package-card-amount{
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.reports-package-card-para{
+    color: #1d2939;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+}
+.reports-package-card-button{
+    border-radius: 7px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.392px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #e1a132;
+    background-color: white;
+}
+.card-amount-suffix{
+    font-weight: 200;
+    font-size: 20px;
+    color: gray;
+}
+.valuation-reports-card-section{
+    display: flex;
+    gap: 25px;
+    padding: 100px 100px 30px;
+   
+}
+
+.enterprise-card-button{
+    background: #e1a132;
+    color: white;
+    margin-top: 80px;
+    
+}
+.enterprise-card-title{
+    color: white;
+}
+
+
+
+
+.valuation-reports-main-section{
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+.reports-package-card-single-section{
+    padding: 24px;
+    border: 1px solid #d0d5dd;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    width: 25%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.enterprise-card-section{
+    background-image: url(enterprise_pkg_bg_small.webp);
+    background-color:#111322;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+.logo-icon{
+    position: absolute;
+    width: 50px;
+    background: #1e233a;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: translate(15px, -15px);
+    border: 1px solid #fff;
+}
+.logo-icon img{
+    vertical-align: middle;
+}

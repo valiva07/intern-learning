@@ -1,0 +1,81 @@
+{
+    "headerSection": {
+        "title": "Get a Business Valuation Report in under 10 minutes",
+        "searchInputBoxText": {
+            "placeHolder": "Enter company name to get started",
+            "iconText": "SEARCH"
+        },
+        "subDescription": "Valuation reports can be edited and recalculated for up to 30 days after purchase.",
+        "buttonText": "View Sample Report"
+    },
+    "businessValuationSection": {
+        "title": "3 Easy Steps to a Business Valuation",
+        "sections": [
+            {
+                "title": "Search for a company",
+                "description": "Search our extensive database for any UK company you would like to value."
+            },
+            {
+                "title": "Edit basic financial & industry data",
+                "description": "Edit your basic financial data with the valuation calculator. Customise the industry for a more accurate valuation."
+            },
+            {
+                "title": "Instantly generate a professional report",
+                "description": "Our comprehensive business valuation report includes six valuation methods, explained, with relevant uses for each."
+            }
+        ]
+    },
+    "reportsPackagesSection": {
+        "title": "Enjoy discounted rates with our valuation reports packages",
+        "description": "If you're interested in valuing multiple companies, take advantage of our discounted package pricing. Contact us for white label solutions or Enterprise options.",
+        "creditsDescription": "Currently, you have 0 credits remaining",
+        "cardsSection": [
+            {
+                "title": "Single",
+                "amount": "£99",
+                "repoInfo": "1 valuation report",
+                "btnText": "BUY NOW"
+            },
+            {
+                "title": "Starter",
+                "amount": "£75",
+                "sufix": "/per report",
+                "repoInfo": "5 valuation report",
+                "btnText": "BUY NOW"
+            },
+            {
+                "title": "Advanced",
+                "amount": "£99",
+                "sufix": "/per report",
+                "repoInfo": "20 valuation report",
+                "btnText": "BUY NOW"
+            },
+            {
+                "title": "Enterprise",
+                "description": "Interested in a valuation package for larger organisations?Get in touch to learn more about our Enterprise offering.",
+                "btnText": "CONTACT US"
+            }
+        ]
+    },
+    "footerSection": {
+        "title": "How does Pomanda value a Business?",
+        "subpara":"Pomanda Plus subscribers can view 'Estimated Valuations' for any company on their profile page.",
+        "cardSection": [
+            {
+                "src": "solar_chart_icon.svg",
+                "title": "Relative Valuation",
+                "description": "At Pomanda our focus is on Relative Valuation, where the value of a company is based on the price of similar companies i.e. public traded companies in the same or related industries."
+            },
+            {
+                "src": "white_calculator_icon.svg",
+                "title": "Valuation Calculator",
+                "description": "Using publicly traded companies ensures that each industry multiple is calculated from a sizeable, recognised and measurable dataset."
+            },
+            {
+                "src": "round_pie_chart_icon.svg",
+                "title": "Bespoke Multiples",
+                "description": "We calculate monthly multiples for every industry, then we adjust for several factors (such as gross margin and Illiquidity) to create a bespoke Pomanda multiple for every company that we value."
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    display: flex;
+    background-color: #15278b;
+    background-image: url("value_business_bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.footer-card-container {
+    padding: 100px 0;
+    max-width: 1228px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.pmanda-value-business-heading {
+    font-size: 40px;
+    line-height: 51px;
+    letter-spacing: .1px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 32px;
+
+}
+
+.card-wrapper-section {
+    padding: 32px;
+    margin: 0;
+    color: #fff;
+    gap: 32px;
+    display: flex;
+
+}
+
+.card-feature-section {
+    padding: 32px;
+    margin: 0;
+    background: hsla(0, 0%, 100%, .12);
+    border-radius: 12px;
+    border: 1px solid #667085;
+    color: #fff;
+    width: 33.3%;
+
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.business-heading-sub-para {
+
+    font-size: 18px;
+    padding-left: 32px;
+    padding-right: 104px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+}
+@media screen and (max-width:991.98px){
+.pmanda-value-business-heading {
+    font-size: 36px;
+}
+.footer-card-container {
+    padding: 40px 30px;
+}
+}

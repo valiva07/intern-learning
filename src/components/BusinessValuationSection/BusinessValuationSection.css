@@ -1,0 +1,132 @@
+.valution-steps-component{
+    padding: 100px 0 60px;
+    background-color: #fff;
+}
+.business-valution-step-main{
+    display: flex;
+    gap: 32px;
+    max-width: 1256px;
+    margin: auto;
+}
+.business-valution-steps-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 50%;
+
+}
+.business-valution-steps-heading{
+    color: #1e233a;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+    line-height: 38.5px;
+    text-align: left;
+    margin-bottom: 0;
+}
+.busniess-valution-step-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.business-valution-step-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    
+}
+.business-valution-step-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+}
+.business-valution-index{
+    font-size: 52px;
+    color: #d0d5dd;
+}
+.business-valution-info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.step-info-box{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+}
+.step-info-box-para{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+}
+.business-valution-video-container{
+    width: 50%;
+    position: relative;
+    border-radius: 20px;
+    transition: transform .4s ease-in-out;
+}
+@media screen and (max-width:991.98px){
+.business-valution-step-main{
+    flex-direction: column;
+}
+.business-valution-steps-info-container{
+
+    width: 100%;
+    padding: 35px;
+}
+.step-info-box{
+    font-size: 16px;
+}
+.step-info-box-para{
+    font-size: 16px;
+}
+.business-valution-step-box{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0;
+}
+.business-valution-steps-heading{
+    font-size: 26px;
+}
+.business-valution-index {
+    font-size: 16px;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+   
+}
+.business-valution-info-box{
+    flex-direction: row;
+}
+.busniess-valution-step-wrapper{
+    gap: 10px;
+}
+.business-valution-step-box:nth-child(3){
+    border-bottom: 0;
+}
+.business-valution-video-container {
+    width: 100%;
+}
+
+}
+
+
+
+

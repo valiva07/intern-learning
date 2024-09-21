@@ -1,0 +1,115 @@
+.header-container{
+    padding: 160px;
+    padding-top: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(headerimage.svg);
+    position: relative;
+    background-color: #14203d;
+
+}
+.business-valudation-header{
+    margin: auto;
+    max-width: 1024px;
+    text-align: center;
+    padding: 0 16px;
+}
+.business-valudation-header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin: auto;
+}
+.business-valudation-heading{
+    font-size: 46px;
+    line-height: 51px;
+    letter-spacing: -2.07px;
+    font-weight: 700;
+    color: #fff;
+}
+.business-valudation-search-container{
+    display: flex;
+    flex-direction: column;
+    width: 739px;
+}
+.busniess-valudation-search-wrapper{
+    max-width: 739px;
+    width: 100%;
+}
+.business-valudation-header-sub-section-container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    margin-top: 35px;
+}
+.header-sub-section-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+
+}
+.header-sub-section-view-sample-button{
+    outline: none;
+    width: 185px;
+    border-radius: 7px;
+    border: 1px solid #e1a132;
+    padding: 8px 14px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-button{
+    background: #e1a132;
+    color:#fff;
+
+}
+.search-bar-section
+{
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px 1rem;
+    justify-content: space-between;
+    gap: 8px;
+    border: gray;
+    align-items: center;
+    border: 6px solid #667085;
+    
+
+}
+.input-width{
+    width: 90%;
+    border: none;
+    padding: 10px;
+}
+.header-button{
+    /* border-radius: 8px;
+    display: flex;
+    width: 20%;
+    height: 45px;
+    display: flex;
+    text-align: center; */
+    border-radius: 8px;
+    /* display: flex; */
+    width: 20%;
+    height: 45px;
+    display: flex;
+    /* text-align: center; */
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    align-items: left;
+    padding: auto;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 0 0 11px 0 rgba(225, 161, 50, .7);
+
+}
