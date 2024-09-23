@@ -52,6 +52,8 @@
             },
             {
                 "title": "Enterprise",
+                "amount":"£35",
+                "sufix":"/per report",
                 "description": "Interested in a valuation package for larger organisations?Get in touch to learn more about our Enterprise offering.",
                 "btnText": "CONTACT US"
             }

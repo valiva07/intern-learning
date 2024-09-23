@@ -113,3 +113,44 @@
     box-shadow: 0 0 11px 0 rgba(225, 161, 50, .7);
 
 }
+@media screen and (max-width:991.98px){
+    .header-container {
+        padding: 0;
+        padding-top: 260px;
+
+    }
+    .business-valudation-search-container {
+       
+        width: 100%;
+        padding-bottom: 170px;
+    }
+    
+}
+@media screen and (max-width:575.98px){
+    .business-valudation-heading {
+        font-size: 27px;
+        line-height: 38px;
+        letter-spacing: -1.07px;
+
+
+}
+.header-container {
+    padding: 0;
+    padding-top: 160px;
+}
+.business-valudation-search-container {
+    width: 100%;
+}
+.header-button {
+    width: auto;
+    height: auto;
+    padding: 10px 18px;
+
+}
+.header-sub-section-text {
+    font-size: 15px;
+}
+.header-sub-section-text {
+    margin-bottom: 15px;
+}
+}

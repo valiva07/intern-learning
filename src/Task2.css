@@ -5,7 +5,12 @@
 .Navbar {
   background-color: #1e233a;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
 }
+
 
 .navbar-logo {
   padding-left: 10px;
@@ -81,4 +86,20 @@
   letter-spacing: .04px;
     line-height: 20px;
     font-size: 16px;
+}
+.background-color-blue{
+ background-color: #1e233a;
+}
+@media screen and (max-width:991.98px) {
+  .navbar-input-field {
+    width: 60%;
+    margin: auto;
+  
+}
+.navbar-menu-icon{
+  color: white;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
 }

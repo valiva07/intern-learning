@@ -5,24 +5,40 @@ import BusinessValuationSection from './components/BusinessValuationSection/Busi
 import Footer from './components/Footer/Footer';
 import HeaderSection from './components/Header/HeaderSection';
 import ReportsPackageSection from './components/ReportsPackages/ReportsPackageSection';
+import { useEffect, useState } from 'react';
+
 
 function Task2() {
+  const [navbarHeader,setNavbarHeader]=useState('');
+  function onScroll(){
+    setNavbarHeader('background-color-blue');
+  }
+  useEffect(() => {
+    
+
+    window.addEventListener('scroll', onScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
   return (
     <div>
-      <nav className='Navbar'>
+      <nav className={`Navbar ${navbarHeader}`} >
+        
         <div className='navdiv'>
           <div className='navbar-logo'><MediaQuery minWidth={992}><img src='/pomandaimg.jpg' width='180' height='40' alt='pomando-logo'></img></MediaQuery>
             <MediaQuery maxWidth={992}><img src='logo_pom.webp' width='30' height='30' alt='valiva'></img></MediaQuery>
           </div>
-          <MediaQuery minWidth={992}>
+          {/* <MediaQuery minWidth={992}> */}
             <div className='navbar-input-field'>
               <input className='navbar-input-sub-field' type='text' placeholder='Search for a Company or Director...'>
               </input>
               <div className='input-field-icon'><i className="bi bi-search"></i>
               </div>
             </div>
-            </MediaQuery>
-         <div> <i class="fas fa-solid fa-bars"></i></div>
+            {/* </MediaQuery> */}
+         <div className='navbar-menu-icon'> <i class="fa fa-bars"></i></div>
           <MediaQuery minWidth={992}>
             <div className='navbar-button-wrapper'>
 

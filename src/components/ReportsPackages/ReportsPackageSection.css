@@ -121,3 +121,131 @@
 .logo-icon img{
     vertical-align: middle;
 }
+.enterprise-card-amount{
+    display: none;
+}
+@media screen and (max-width:991.98px){
+    .reports-package-wrapper-section {
+        background-image: none;
+        margin-top: 0;
+
+    }
+    .valuation-report-ppc-packages-section {
+        padding: 50px 40px;
+}
+.reports-package-content-section {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+}
+.valuation-reports-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 560px;
+}
+.valuation-reports-card-section{
+    padding: 0;
+    flex-direction: column;
+}
+.reports-package-card-single-section{
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+        
+        
+    
+}
+.reports-package-card-button{
+    width: 106px;
+}
+.reports-package-card-title {
+    font-size: 20px;
+
+}
+.reports-package-card-amount {
+    font-size: 42px;
+}
+.enterprise-card-button{
+    margin-top: 20px;
+    width: 106px;
+}
+.enterprise-card-amount{
+    display: block;
+    color: #fff;
+}
+.enterprise-card-section{
+    flex-direction: column;
+}
+.enterprise-card-tablet-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-wrapper-section{
+    flex-direction: row;
+}
+.card-feature-section{
+    width: 33.3%;
+}
+
+}
+@media  Screen and (max-width:575.98px) {
+    .main-heading {
+        /* font-weight: bold; */
+        line-height: 30px;
+        font-size: 25px;
+        line-height: normal;
+        letter-spacing: -1.17px;
+    
+}
+.valuation-reports-section {
+   
+    width: 100%;
+}
+.reports-package-content-section {
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer-card-container {
+    max-width: 100%;
+    padding:0;
+}
+.pmanda-value-business-heading {
+    font-size: 27px;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 15px;
+    padding: 30px 16px;
+
+}
+.business-heading-sub-para {
+    font-size: 18px;
+    padding-left: 32px;
+    padding-right: 104px;
+    line-height: 25px;
+    letter-spacing: -.028em;
+}
+.card-feature-section {
+    padding: 32px;
+    margin: 0;
+    background: hsla(0, 0%, 100%, .12);
+    border-radius: 12px;
+    border: 1px solid #667085;
+    color: #fff;
+    width: 33.3%;
+}
+.card-wrapper-section {
+   
+    flex-direction: column;
+}
+.card-feature-section {
+    width: 100%;
+}
+}
