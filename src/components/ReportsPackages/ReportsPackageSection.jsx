@@ -16,21 +16,21 @@ function ReportsPackageSection({ title, description, creditsDescription, cardsSe
                     <p>Currently, you have <b><u>0</u></b> credits remaining</p><br></br>
                 </div>
                 <div className='valuation-reports-card-section'>
-                    {cardsSection.map((object, index) => {
+                    {cardsSection.map((object,) => {
                         let enterpriseCss = '';
                         let enterpriseButtonCss = '';
                         let enterpriseTitleCss = '';
                         let enterpriseAmountCss = '';
 
-                        if (index === 3) {
+                        if (cardsSection.id === "enterprise") {
                             enterpriseCss = "enterprise-card-section";
                             enterpriseButtonCss = "enterprise-card-button";
                             enterpriseTitleCss = "enterprise-card-title";
                             enterpriseAmountCss = "enterprise-card-amount";
                         }
                         return <div className={`reports-package-card-single-section ${enterpriseCss}`}>
-                            {index === 3 && <div className='logo-icon'><img src="logo_pom.webp" width='30' height='30' alt='logo-pomanda' /></div>}
-                            {index !== 3 && <><div >
+                            {cardsSection.id === "enterprise" && <div className='logo-icon'><img src="logo_pom.webp" width='30' height='30' alt='logo-pomanda' /></div>}
+                            {cardsSection.id !== "enterprise" && <><div >
                                 <h5 className={`reports-package-card-title ${enterpriseTitleCss}`}>{object.title}</h5>
 
                                 {<p className={`reports-package-card-amount ${enterpriseAmountCss}`}>{object.amount} <span className='card-amount-suffix'>{object.sufix}</span></p>}
@@ -41,7 +41,7 @@ function ReportsPackageSection({ title, description, creditsDescription, cardsSe
 
                             </div>
                                 <button className={`reports-package-card-button ${enterpriseButtonCss}`}>{object.btnText}</button></>}
-                            {index === 3 && <MediaQuery minWidth={992} > <><div >
+                            {cardsSection.id === "enterprise" && <MediaQuery minWidth={992} > <><div >
                                 <h5 className={`reports-package-card-title ${enterpriseTitleCss}`}>{object.title}</h5>
 
                                 {<p className={`reports-package-card-amount ${enterpriseAmountCss}`}>{object.amount} <span className='card-amount-suffix'>{object.sufix}</span></p>}
@@ -53,7 +53,7 @@ function ReportsPackageSection({ title, description, creditsDescription, cardsSe
                             </div>
                                 <button className={`reports-package-card-button ${enterpriseButtonCss}`}>{object.btnText}</button></>
                             </MediaQuery>}
-                            {index === 3 && <MediaQuery maxWidth={991.98}> <div className='enterprise-card-tablet-wrapper'>
+                            {cardsSection.id === "enterprise" && <MediaQuery maxWidth={991.98}> <div className='enterprise-card-tablet-wrapper'>
                                 <div>
                                     <h5 className={`reports-package-card-title ${enterpriseTitleCss}`}>{object.title}</h5>
 

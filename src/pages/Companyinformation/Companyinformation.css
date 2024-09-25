@@ -1,0 +1,48 @@
+.company-details-contanier {
+    padding: 100px;
+}
+
+.company-details-card {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 5px solid aqua;
+    margin-top: 30px;
+}
+
+.company-info-sheet-heading {
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.company-data-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+
+.company-info-sheet-reg {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.company-info-sheet-reg label {
+   
+    color: orchid;
+    width: 30%;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.company-info-sheet-reg input {
+
+    width: 90%;
+    padding: 10px;
+    border-bottom: 2px solid aqua;
+   
+}

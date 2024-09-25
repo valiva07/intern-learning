@@ -1,0 +1,25 @@
+.table-section {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    justify-content: center;
+  }
+ .container{
+    position: relative;
+    padding-top: 200px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+   padding: 150px 40px;
+ } 
+ .table-head{
+    background-color: aqua;
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+ }
+ .table-head-text{
+    font-size: 30px;
+    color: blue;
+ }
+ 
