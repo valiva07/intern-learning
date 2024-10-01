@@ -37,7 +37,7 @@ function Companyinformation() {
                     headers: new Headers({
                         'Content-Type': 'application/json',
 
-                        'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3MjcyNjc4MDMsImV4cCI6MTcyNzI3MTQwM30.KpgEcg8USZZjEC481-xvAeDicAth_9rIFZxgrXt9xTA'
+                        'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3MjczNDM3MjQsImV4cCI6MTcyNzM0NzMyNH0.j7zDJKXCLQMBEBwqZR1AfLev98i2FTylm75ayEERwVw'
                     }
 
                     ),
@@ -52,9 +52,9 @@ function Companyinformation() {
             console.log('error inside fetchCompaniesData', error);
         }
     }
-    const rows =[
+    const rows=[
         
-    ]
+    ];
 
 
     return (

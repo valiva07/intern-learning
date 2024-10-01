@@ -3,6 +3,7 @@
     border-collapse: collapse;
     width: 100%;
     justify-content: center;
+    margin-top:20px
   }
  .container{
     position: relative;
@@ -16,10 +17,63 @@
     background-color: aqua;
     text-align: left;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
  }
  .table-head-text{
     font-size: 30px;
     color: blue;
  }
- 
+ .input-container{
+   display: flex;
+   justify-content: space-between;
+ }
+ .input-field-company{
+   padding: 7px;
+    border-radius: 3px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  transition: background-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #0056b3;
+}
+
+.page-link:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  cursor: not-allowed;
+}
+.footer{
+  margin-top: 50px;
+}
+.bi {
+    font-size: 20px;
+}
