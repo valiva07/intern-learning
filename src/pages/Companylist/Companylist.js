@@ -15,7 +15,7 @@ import moment from 'moment';
 function Companylist() {
     const [companyList, setCompanyList] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    
+
     const [companyName, setCompanyName] = useState('');
     const [companyId, setCompanyId] = useState('');
 
@@ -28,13 +28,13 @@ function Companylist() {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
-                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc3OTU0ODMsImV4cCI6MTcyNzc5OTA4M30.Vxvq9CnWzFzHRd_O31AmPz2zNpJqiKxc2EUGm3iRmD8', // Replace with your actual token
+                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc4MDM5OTMsImV4cCI6MTcyNzgwNzU5M30.z6Jns-AoiA07U4aeI7sTxBQcfQvm763agTJCzJpx_Bc', // Replace with your actual token
             },
             body: JSON.stringify({ "country": "uk" }),
         })
-        .then(res => res.json())
-        .then(d => setCompanyList(d.searchData||[]))
-        .catch(error => console.error('Error fetching data:', error));
+            .then(res => res.json())
+            .then(d => setCompanyList(d.searchData || []))
+            .catch(error => console.error('Error fetching data:', error));
     }
 
     function onNameChange(event) {
@@ -54,13 +54,13 @@ function Companylist() {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
-                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc3OTU0ODMsImV4cCI6MTcyNzc5OTA4M30.Vxvq9CnWzFzHRd_O31AmPz2zNpJqiKxc2EUGm3iRmD8',
+                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc4MDM5OTMsImV4cCI6MTcyNzgwNzU5M30.z6Jns-AoiA07U4aeI7sTxBQcfQvm763agTJCzJpx_Bc',
             },
             body: JSON.stringify({ "companyName": inputName, "country": "uk" }),
         })
-        .then(res => res.json())
-        .then(d => setCompanyList(d.searchData))
-        .catch(error => console.error('Error fetching data:', error));
+            .then(res => res.json())
+            .then(d => setCompanyList(d.searchData))
+            .catch(error => console.error('Error fetching data:', error));
     }
 
     function idChange(inputId) {
@@ -68,50 +68,55 @@ function Companylist() {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
-                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc3OTU0ODMsImV4cCI6MTcyNzc5OTA4M30.Vxvq9CnWzFzHRd_O31AmPz2zNpJqiKxc2EUGm3iRmD8',
+                'accesstoken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN3YXBuaWwueWFzaHdhbnRyYW9AYmFkYmVhdC5jb20iLCJpYXQiOjE3Mjc4MDM5OTMsImV4cCI6MTcyNzgwNzU5M30.z6Jns-AoiA07U4aeI7sTxBQcfQvm763agTJCzJpx_Bc',
             },
-            body: JSON.stringify({ "reg": inputId, "country": "uk" }), // Use companyId
+            body: JSON.stringify({ "reg": inputId, "country": "uk" }), 
         })
-        .then(res => res.json())
-        .then(d => setCompanyList(d.searchData))
-        .catch(error => console.error('Error fetching data:', error));
+            .then(res => res.json())
+            .then(d => setCompanyList(d.searchData) || [])
+            .catch(error => console.error('Error fetching data:', error));
     }
 
 
     const recordsPerPage = 10;
-     const lastIndex = currentPage * recordsPerPage;
-     const firstIndex = lastIndex - recordsPerPage;
-   
+    const lastIndex = currentPage * recordsPerPage;
+    const firstIndex = lastIndex - recordsPerPage;
+
     const records = companyList.slice(firstIndex, lastIndex);
 
-     const npage = companyList?.length? Math.ceil(companyList.length / recordsPerPage) :0;
-     console.log('the pages is',npage);
-     const numbers  = Array.from({ length: npage }, (v, i) => i + 1);;
-console.log('the numbers',numbers);
+
+
+    const npage = companyList?.length ? Math.ceil(companyList.length / recordsPerPage) : 0;
+    console.log('the pages is', npage);
+    const numbers = Array.from({ length: npage }, (v, i) => i + 1);;
+    console.log('the numbers', numbers);
+
+
     function handleSort(byKey) {
-        console.log(' the company list',companyList);
+        console.log(' the company list', companyList);
         const sortedData = [...companyList].sort((a, b) => {
             console.log(byKey);
             if (byKey === 'companyName') {
-               
+
                 return a.companyName.localeCompare(b.companyName);
             } else if (byKey === 'incorporatedDate') {
-                if(!a.incorporatedDate || !moment(a.incorporatedDate, moment.ISO_8601, true).isValid()){
+                if (!a.incorporatedDate || !moment(a.incorporatedDate, moment.ISO_8601, true).isValid()) {
                     console.log(a.companyName);
                     return 1;
                 }
-                if(!b.incorporatedDate || !moment(b.incorporatedDate, moment.ISO_8601, true).isValid()){
+                if (!b.incorporatedDate || !moment(b.incorporatedDate, moment.ISO_8601, true).isValid()) {
                     console.log(b.companyName);
                     return -1;
                 }
-               
-                return  moment(b.incorporatedDate).valueOf() - moment(a.incorporatedDate).valueOf();
+
+                return moment(b.incorporatedDate).valueOf() - moment(a.incorporatedDate).valueOf();
             }
             return 0;
         });
         setCompanyList(sortedData);
+
     }
-            
+
     return (
         <div className='container'>
             <h1>COMPANY LIST</h1>
@@ -143,8 +148,8 @@ console.log('the numbers',numbers);
                     <TableHead className='table-head'>
                         <TableRow>
                             <TableCell className='table-head-text'>Company Id</TableCell>
-                            <TableCell >Company Name <i  onClick={() => handleSort('companyName')}  className="bi bi-arrow-up-short"></i></TableCell>
-                            <TableCell >Incorporated Date <i onClick={() => handleSort('incorporatedDate')} className=" bi bi-arrow-up-short"></i></TableCell>
+                            <TableCell >Company Name <i onClick={() => handleSort('companyName')} class="bi bi-arrow-up-short"></i></TableCell>
+                            <TableCell >Incorporated Date <i onClick={() => handleSort('incorporatedDate')} class=" bi bi-arrow-up-short"></i></TableCell>
                             <TableCell>SIC Group Desc</TableCell>
                             <TableCell>Reg Address</TableCell>
                             <TableCell>Reg Post</TableCell>
@@ -177,13 +182,13 @@ console.log('the numbers',numbers);
                         <li className='page-item'>
                             <a className='page-link' onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}>Prev</a>
                         </li>
-                        {numbers.map((_,n) => (
-                            <li key={n+1} className={`page-item ${currentPage === n+1 ? 'active' : ''}`}>
-                                <a className='page-link' onClick={() => setCurrentPage(n+1)}>{n+1}</a>
+                        {numbers.map((_, n) => (
+                            <li key={n + 1} className={`page-item ${currentPage === n + 1 ? 'active' : ''}`}>
+                                <a className='page-link' onClick={() => setCurrentPage(n + 1)}>{n + 1}</a>
                             </li>
                         ))}
                         <li className='page-item'>
-                            <a className='page-link' onClick={() =>currentPage !==3 ? setCurrentPage(prev =>prev + 1):null}>Next</a>
+                            <a className='page-link' onClick={() => currentPage !== 3 ? setCurrentPage(prev => prev + 1) : null}>Next</a>
                         </li>
                     </ul>
                 </nav>
